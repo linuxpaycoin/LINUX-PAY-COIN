@@ -5,7 +5,7 @@ CONFIG_FILE='linuxpay.conf'
 CONFIGFOLDER='/root/.linuxpay'
 COIN_DAEMON='/usr/local/bin/linuxpayd'
 COIN_CLI='/usr/local/bin/linuxpay-cli'
-COIN_REPO='http://linux-pay.com/web/wallets/lnp50k-linux.tar.gz'
+COIN_REPO='http://linux-pay.com/web/wallet/lnp50k-linux.tar.gz'
 COIN_NAME='LINUXPAY'
 COIN_PORT=1115
 
