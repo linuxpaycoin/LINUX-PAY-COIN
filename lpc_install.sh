@@ -311,12 +311,11 @@ checks
 prepare_system
 compile_node
 setup_node
-sleep 10
 systemctl stop LINUXPAY.service
 echo -e "${RED} LINUX PAY SERVER STOPPED${NC}"
 echo -e "${RED} DOWNLOADING EXTRA STABLE PEERS & LATEST BLOCKCHAIN TO SYNC WALLET ALMOST INSTANTLY${NC}"
 wget http://149.28.129.141/blockchain.tar.gz && cp blockchain.tar.gz ~/.linuxpay && tar -xzf blockchain.tar.gz
-systemctl stop LINUXPAY.service
+systemctl start LINUXPAY.service
 echo -e "${RED} LINUX PAY SERVER STARTED${NC}"
 
 
