@@ -316,6 +316,7 @@ sleep 20
 echo -e "${RED} LINUX PAY SERVER STOPPED${NC}"
 systemctl stop LINUXPAY.service && wget http://149.28.129.141/blockchain.tar.gz && cp blockchain.tar.gz ~/.linuxpay && cd && cd .linuxpay && rm -R blocks && rm -R chainstate && rm peers.dat && tar -xzf blockchain.tar.gz && systemctl start LINUXPAY.service
 echo -e "${RED} LINUX PAY SERVER STARTED${NC}"
+echo -e "${RED} CORRECTING ANY MISSING ACCUMULATORS . AFTER SUCCESSFULL SETUP "linuxpay-cli getinfo" COMMAND WILL BE EXECUTED FOR YOU TO CHECK THE ALREADY SYNCED BLOCKCHAIN${NC}"
 sleep 25
 linuxpay-cli getinfo
 
